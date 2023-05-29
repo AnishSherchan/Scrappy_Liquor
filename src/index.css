@@ -5,13 +5,6 @@ body {
   @apply bg-[#F7F6F1] h-full overflow-x-hidden;
 }
 
-#__next {
-  @apply h-full;
-}
-
-html {
-  @apply h-full;
-}
 @layer base {
   h1 {
     @apply text-[40px];
