@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useEffect, useState } from "react";
 import Logo from "../../assets/Logo.svg";
 import DarkLogo from "../../assets/DarkLogo.svg";
@@ -28,11 +30,15 @@ const Navbar = () => {
     >
       <div className="flex items-center flex-wrap">
         <img
-          src={showBackground ? DarkLogo : Logo}
+          src={
+            showBackground
+              ? "https://cdn.shopify.com/s/files/1/0025/8555/9110/t/46/assets/logo-black_440x.png?v=82187768844039924211675878975"
+              : "https://cdn.shopify.com/s/files/1/0025/8555/9110/t/46/assets/logo-white_440x.png?v=162067531780476946271675878975"
+          }
           alt="Logo"
-          className="h-10 cursor-pointer"
+          className="h-8 lg:h-10 cursor-pointer"
         />{" "}
-        <img src="https://cdn.shopify.com/s/files/1/0025/8555/9110/t/46/assets/logo-white_440x.png?v=162067531780476946271675878975" />
+        <img src="" />
       </div>
       <div className="flex items-center gap-5">
         <Icon
