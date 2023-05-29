@@ -8,10 +8,10 @@ function App() {
       <Navbar />
       <div className=" relative h-screen w-full bg-[url('/src/assets/mob.png')] lg:bg-[url('/src/assets/Main.png')] bg-no-repeat bg-center lg:bg-fixed bg-cover">
         <div className="absolute top-[27%] left-[12%]">
-          <h1 className="text-white text-[30px] lg:text-[40px] tracking-wider">
+          <h1 className="hero text-white text-[30px] lg:text-[40px] tracking-wider">
             Welcome to Scrappy
           </h1>
-          <h2 className="text-white mt-3 mb-9 text-[22px] lg:text-[28px] tracking-wider">
+          <h2 className="hero text-white mt-3 mb-9 text-[22px] lg:text-[28px] tracking-wider">
             Get your Whiskey today.
           </h2>
           <Primary title="Get your Premium Liquors." />
