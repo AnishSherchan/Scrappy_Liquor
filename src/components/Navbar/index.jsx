@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`w-full fixed z-40 py-4 px-12 flex justify-between items-center transition duration-500 ${
+      className={`w-full fixed z-40 py-4 px-10 flex justify-between items-center transition duration-500 ${
         showBackground ? "bg-back-ground drop-shadow-xl " : ""
       }`}
     >
@@ -30,7 +30,7 @@ const Navbar = () => {
         <img
           src={showBackground ? DarkLogo : Logo}
           alt="Logo"
-          className="h-12 cursor-pointer"
+          className="h-9 cursor-pointer"
         />{" "}
       </div>
       <div className="flex items-center gap-5">
