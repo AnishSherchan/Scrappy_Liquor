@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full fixed z-40 py-4 px-12 flex justify-between items-center transition duration-500 ${
-        showBackground ? "bg-back-ground drop-shadow-md" : ""
+        showBackground ? "bg-back-ground drop-shadow-xl " : ""
       }`}
     >
       <div className="flex items-center flex-wrap">
