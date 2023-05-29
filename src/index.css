@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-[#F7F6F1] h-full overflow-x-hidden;
+}
+
+#__next {
+  @apply h-full;
+}
+
+html {
+  @apply h-full;
+}
+@layer base {
+  h1 {
+    @apply text-[40px];
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h4 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h5 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h6 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+}
