@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className=" relative h-[100vh] w-full bg-[url('/src/assets/Main.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+      <div className=" relative h-[100vh] w-full bg-[url('/src/assets/mob.jpg')] lg:bg-[url('/src/assets/Main.png')] bg-no-repeat bg-center bg-fixed bg-cover">
         <div className="absolute top-[27%] left-[12%]">
           <h1 className="text-white text-[30px] lg:text-[40px] tracking-wider">
             Welcome to Scrappy
