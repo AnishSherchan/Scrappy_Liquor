@@ -18,8 +18,7 @@ function App() {
         </div>
       </div>
       <div className="h-screen">
-        <p>halo</p>
-        <p>halo</p>
+        <p>Anish</p>
       </div>
     </div>
   );
