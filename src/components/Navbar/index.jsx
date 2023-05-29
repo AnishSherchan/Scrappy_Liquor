@@ -30,8 +30,9 @@ const Navbar = () => {
         <img
           src={showBackground ? DarkLogo : Logo}
           alt="Logo"
-          className="h-9 cursor-pointer"
+          className="h-10 cursor-pointer"
         />{" "}
+        <img src="https://cdn.shopify.com/s/files/1/0025/8555/9110/t/46/assets/logo-white_440x.png?v=162067531780476946271675878975" />
       </div>
       <div className="flex items-center gap-5">
         <Icon
