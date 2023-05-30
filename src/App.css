@@ -12,7 +12,11 @@ body {
 .slick-list {
   padding-bottom: 30px !important;
 }
-
+.slick-arrow {
+  height: 40px !important;
+  width: 28px !important;
+  color: #ddac58 !important;
+}
 .slider-item {
   display: inline-block;
 }
