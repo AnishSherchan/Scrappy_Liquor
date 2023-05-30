@@ -7,37 +7,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const imagesLoaded = () => {
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    };
+    }, 3000); // Set the loading duration in milliseconds (e.g., 3000ms = 3 seconds)
 
-    const images = document.querySelectorAll("img");
-    const totalImages = images.length;
-    let loadedImages = 0;
-
-    images.forEach((image) => {
-      if (image.complete) {
-        loadedImages++;
-      } else {
-        image.addEventListener("load", () => {
-          loadedImages++;
-          if (loadedImages === totalImages) {
-            imagesLoaded();
-          }
-        });
-      }
-    });
-
-    if (loadedImages === totalImages) {
-      imagesLoaded();
-    }
-
-    return () => {
-      images.forEach((image) => {
-        image.removeEventListener("load", imagesLoaded);
-      });
-    };
+    return () => clearTimeout(timer);
   }, []);
+
   if (isLoading) {
     return (
       <div>
