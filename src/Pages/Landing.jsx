@@ -7,9 +7,6 @@ import Blenders from "/src/assets/Blenders.png";
 import Glenmorangie from "/src/assets/GLENMORANGINE.png";
 
 const LandingPage = () => {
-  const onLoad = () => {
-    console.log("loaded");
-  };
   const productData = [
     {
       name: "Jack Daniel’s",
@@ -92,7 +89,7 @@ const LandingPage = () => {
   return (
     <>
       <HeroSection />
-      <OurProducts onLoad={onLoad} productData={productData} />
+      <OurProducts productData={productData} />
     </>
   );
 };

@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const OurProducts = ({ productData, onLoad }) => {
+const OurProducts = ({ productData }) => {
   const [slidesToShow, setSlidesToShow] = useState(4);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -54,7 +54,7 @@ const OurProducts = ({ productData, onLoad }) => {
             {productData.map((item, index) => (
               <div className="slider-item" key={index}>
                 <div className="product-card-wrapper">
-                  <ProductCard onLoad={onLoad} productData={item} />
+                  <ProductCard productData={item} />
                 </div>
               </div>
             ))}
