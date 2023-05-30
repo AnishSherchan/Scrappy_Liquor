@@ -36,7 +36,6 @@ const OurProducts = ({ productData }) => {
         <h6 className="underline mb-10 font-black text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
           Our Whiskey
         </h6>
-
         <div className=" p-4 ">
           <Slider {...settings} autoplay={true} autoplaySpeed={3000}>
             {productData.map((item, index) => (

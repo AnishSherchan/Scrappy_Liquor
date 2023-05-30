@@ -27,6 +27,21 @@ const LandingPage = () => {
       img: Blenders,
       category: "Whiskey",
     },
+    {
+      name: "BLENDERS PRIDE",
+      img: Blenders,
+      category: "Whiskey",
+    },
+    {
+      name: "BLENDERS PRIDE",
+      img: Blenders,
+      category: "Whiskey",
+    },
+    {
+      name: "BLENDERS PRIDE",
+      img: Blenders,
+      category: "Whiskey",
+    },
   ];
   return (
     <>
