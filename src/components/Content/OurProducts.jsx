@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const OurProducts = ({ productData }) => {
+const OurProducts = ({ productData, onLoad }) => {
   const [slidesToShow, setSlidesToShow] = useState(4);
   useEffect(() => {
     const handleResize = () => {
@@ -39,7 +39,7 @@ const OurProducts = ({ productData }) => {
         <div className=" p-4 ">
           <Slider {...settings} autoplay={true} autoplaySpeed={3000}>
             {productData.map((item, index) => (
-              <ProductCard productData={item} key={index} />
+              <ProductCard onLoad={onLoad} productData={item} key={index} />
             ))}
           </Slider>
         </div>

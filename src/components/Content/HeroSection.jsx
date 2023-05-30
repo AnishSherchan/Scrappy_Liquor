@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Primary from "../Button/Primary";
 import { Icon } from "@iconify/react";
 

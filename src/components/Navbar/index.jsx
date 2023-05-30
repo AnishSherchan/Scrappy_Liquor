@@ -1,8 +1,6 @@
 /* eslint-disable */
 
 import { useEffect, useState } from "react";
-import Logo from "../../assets/Logo.svg";
-import DarkLogo from "../../assets/DarkLogo.svg";
 import { Icon } from "@iconify/react";
 
 const TOP_OFFSET = 115;
