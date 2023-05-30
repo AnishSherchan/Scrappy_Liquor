@@ -27,8 +27,9 @@ const OurProducts = ({ productData, onLoad }) => {
     slidesToShow,
     slidesToScroll: 1,
   };
+
   return (
-    <div className=" px-8 lg:px-16 my-8  flex flex-col gap-12">
+    <div className="px-8 lg:px-16 my-8 flex flex-col gap-12">
       <h5 className="text-center text-[20px] font-extrabold tracking-normal lg:text-[22px] decoration-2 underline decoration-primary underline-offset-4">
         OUR PRODUCTS
       </h5>
@@ -36,10 +37,14 @@ const OurProducts = ({ productData, onLoad }) => {
         <h6 className="underline mb-10 font-black text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
           Our Whiskey
         </h6>
-        <div className=" p-4 ">
+        <div className="p-4">
           <Slider {...settings} autoplay={true} autoplaySpeed={3000}>
             {productData.map((item, index) => (
-              <ProductCard onLoad={onLoad} productData={item} key={index} />
+              <div className="slider-item" key={index}>
+                <div className="product-card-wrapper">
+                  <ProductCard onLoad={onLoad} productData={item} />
+                </div>
+              </div>
             ))}
           </Slider>
         </div>

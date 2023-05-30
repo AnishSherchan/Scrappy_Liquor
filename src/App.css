@@ -13,8 +13,10 @@ body {
   padding-bottom: 30px !important;
 }
 
-@media only screen and (min-width: 768px) {
-  .slick-list {
-    padding-left: 50px !important;
-  }
+.slider-item {
+  display: inline-block;
+}
+.product-card-wrapper {
+  display: flex;
+  justify-content: center;
 }
