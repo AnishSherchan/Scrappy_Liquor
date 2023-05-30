@@ -8,7 +8,6 @@ const OurProducts = () => {
         <h6 className="underline font-black text-[20px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
           Our Whiskey
         </h6>
-        <p>Halo</p>
       </section>
     </div>
   );
