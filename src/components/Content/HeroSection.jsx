@@ -6,7 +6,7 @@ const Content = () => {
     <>
       {/* bg-[url('https://cdn.shopify.com/s/files/1/0025/8555/9110/files/Header-Image_1_1080x.png?v=1675715280')]  */}
       <div className=" relative h-screen w-full bg-[url('/src/assets/Mobile_Main.png')]   lg:bg-[url('/src/assets/Main.png')] bg-no-repeat bg-center lg:bg-fixed bg-cover">
-        <div className=" bg-opacity-40 lg:bg-opacity-30 h-full bg-black">
+        <div className=" bg-opacity-40 lg:bg-opacity-20 h-full bg-black">
           <div className="absolute top-[34%] lg:top-[27%] left-[12%]">
             <h1 className="hero text-white text-[30px] lg:text-[40px] tracking-wider">
               Welcome to Scrappy
