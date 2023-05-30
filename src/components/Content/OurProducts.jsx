@@ -5,7 +5,7 @@ const OurProducts = () => {
         OUR PRODUCTS
       </h5>
       <section>
-        <h6 className="underline font-extrabold text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
+        <h6 className="underline font-black text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
           Our Whiskey
         </h6>
       </section>
