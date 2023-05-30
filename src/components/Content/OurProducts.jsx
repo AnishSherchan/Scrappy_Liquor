@@ -4,7 +4,7 @@ const OurProducts = () => {
       <h5 className="text-center text-[20px] font-extrabold tracking-normal lg:text-[22px] decoration-2 underline decoration-primary underline-offset-4">
         OUR PRODUCTS
       </h5>
-      <h6 className="underline font-extrabold text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
+      <h6 className="underline my-12 font-extrabold text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
         Our Whiskey
       </h6>
     </div>
