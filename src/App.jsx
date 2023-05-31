@@ -7,7 +7,7 @@ function App() {
     <div>
       <Navbar />
       <LandingPage />
-      <div className="h-screen">
+      <div>
         <p>Anish</p>
       </div>
     </div>

@@ -5,6 +5,18 @@ import Blacklabel from "/src/assets/BlackLabel.png";
 import Jimbean from "/src/assets/Jimbean.png";
 import Blenders from "/src/assets/Blenders.png";
 import Glenmorangie from "/src/assets/GLENMORANGINE.png";
+import Bogle from "/src/assets/bogle.png";
+import Filius from "/src/assets/Filius.png";
+import Fox from "/src/assets/foxglove.png";
+import Frontera from "/src/assets/frontera.png";
+import Moscato from "/src/assets/moscato.png";
+import Bison from "/src/assets/Bison.png";
+import BudLight from "/src/assets/Bud-Light.png";
+import Budweiser from "/src/assets/Budweiser.png";
+import Corona from "/src/assets/Corona.png";
+import Heineken from "/src/assets/heineken-original.png";
+import Sioux from "/src/assets/Sioux_City.png";
+import Banner from "/src/assets/Banner.png";
 
 const LandingPage = () => {
   const productData = [
@@ -35,61 +47,71 @@ const LandingPage = () => {
     },
 
     {
-      name: "Jack Daniel’s",
-      img: Jd,
+      name: "Frontera",
+      img: Frontera,
       category: "Wine",
     },
     {
-      name: "Black Label",
-      img: Blacklabel,
+      name: "Risata Red Moscato",
+      img: Moscato,
       category: "Wine",
     },
     {
-      name: "JIM BEAM",
-      img: Jimbean,
+      name: "Filius",
+      img: Filius,
       category: "Wine",
     },
     {
-      name: "BLENDERS PRIDE",
-      img: Blenders,
+      name: "BOGLE OLD",
+      img: Bogle,
       category: "Wine",
     },
     {
-      name: "GLENMORANGIE",
-      img: Glenmorangie,
+      name: "FOXGLOVE",
+      img: Fox,
       category: "Wine",
     },
 
     {
-      name: "Jack Daniel’s",
-      img: Jd,
+      name: "Bison",
+      img: Bison,
       category: "Beer",
     },
     {
-      name: "Black Label",
-      img: Blacklabel,
+      name: "Budweiser",
+      img: Budweiser,
       category: "Beer",
     },
     {
-      name: "JIM BEAM",
-      img: Jimbean,
+      name: "Bud Light",
+      img: BudLight,
       category: "Beer",
     },
     {
-      name: "BLENDERS PRIDE",
-      img: Blenders,
+      name: "Corona",
+      img: Corona,
       category: "Beer",
     },
     {
-      name: "GLENMORANGIE",
-      img: Glenmorangie,
+      name: "Heineken",
+      img: Heineken,
+      category: "Beer",
+    },
+    {
+      name: "Sioux City",
+      img: Sioux,
       category: "Beer",
     },
   ];
+  const banner = {
+    img: Banner,
+    title:
+      "Raise Your Glass to Exceptional Taste! Explore our Premium Selection Today.",
+  };
   return (
     <>
       <HeroSection />
-      <OurProducts productData={productData} />
+      <OurProducts productData={productData} banner={banner} />
     </>
   );
 };
