@@ -31,7 +31,7 @@ const Contact = () => {
       <div>
         <div className="flex justify-center mb-[30px]">
           <img
-            src="/src/assets/Google_Maps-Logo.wine.svg"
+            src="../../assets/Google_Maps-Logo.wine.svg"
             className=" h-[39px] w-[213px]"
           />
         </div>
