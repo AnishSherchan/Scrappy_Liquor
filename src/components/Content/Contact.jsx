@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 import { Icon } from "@iconify/react";
+import GoogleMap from "/src/assets/Google_Maps-Logo.wine.svg";
 
 const Contact = () => {
   return (
@@ -30,10 +31,7 @@ const Contact = () => {
       </div>
       <div>
         <div className="flex justify-center mb-[30px]">
-          <img
-            src="../../assets/Google_Maps-Logo.wine.svg"
-            className=" h-[39px] w-[213px]"
-          />
+          <img src={GoogleMap} className=" h-[39px] w-[213px]" />
         </div>
         <iframe
           className=" rounded-2xl shadow-lg"
