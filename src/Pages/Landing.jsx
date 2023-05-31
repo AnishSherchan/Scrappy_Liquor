@@ -17,6 +17,7 @@ import Corona from "/src/assets/Corona.png";
 import Heineken from "/src/assets/heineken-original.png";
 import Sioux from "/src/assets/Sioux_City.png";
 import Banner from "/src/assets/Banner.png";
+import Contact from "../components/Content/Contact";
 
 const LandingPage = () => {
   const productData = [
@@ -103,6 +104,7 @@ const LandingPage = () => {
       category: "Beer",
     },
   ];
+
   const banner = {
     img: Banner,
     title:
@@ -112,6 +114,7 @@ const LandingPage = () => {
     <>
       <HeroSection />
       <OurProducts productData={productData} banner={banner} />
+      <Contact />
     </>
   );
 };
