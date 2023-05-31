@@ -1,19 +1,14 @@
 /* eslint-disable */
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
-import ProductCard from "../ProductCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Banner from "../Banner/Banner";
-import ProductSlider from "../ProductSlider/ProductSlider";
+import ProductCard from "../ProductCard";
 
-const OurProducts = ({ productData, banner }) => {
+const ProductSlider = ({ product, title }) => {
   const [slidesToShow, setSlidesToShow] = useState(4);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const whiskey = productData.filter((item) => item.category === "Whiskey");
-  const wine = productData.filter((item) => item.category === "Wine");
-  const beer = productData.filter((item) => item.category === "Beer");
 
   useEffect(() => {
     const handleResize = () => {
@@ -44,29 +39,24 @@ const OurProducts = ({ productData, banner }) => {
     nextArrow:
       windowWidth <= 768 ? <Icon icon="icon-park-outline:right" /> : null,
   };
-
   return (
-    <div className="mx-8 lg:mx-16 my-8 flex flex-col gap-12">
-      <h5 className="text-center text-[20px] font-extrabold tracking-normal lg:text-[22px] decoration-2 underline decoration-primary underline-offset-4">
-        OUR PRODUCTS
-      </h5>
-      <section>
-        <ProductSlider product={whiskey} title="Our Whiskey" />
-      </section>
-
-      <section>
-        <ProductSlider product={wine} title="Our Wine" />
-      </section>
-
-      <section className="relative -mx-8 lg:-mx-16">
-        <Banner banner={banner} />
-      </section>
-
-      <section>
-        <ProductSlider product={beer} title="Our Beer" />
-      </section>
+    <div>
+      <h6 className="underline mb-10 font-black text-[18px] lg:text-[20px] decoration-2 decoration-primary underline-offset-4">
+        {title}
+      </h6>
+      <div className="p-4">
+        <Slider {...settings} autoplay={true} autoplaySpeed={3000}>
+          {product?.map((item, index) => (
+            <div className="slider-item" key={index}>
+              <div className="product-card-wrapper">
+                <ProductCard productData={item} />
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
 
-export default OurProducts;
+export default ProductSlider;
