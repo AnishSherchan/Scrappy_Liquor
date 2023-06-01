@@ -29,7 +29,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className=" mb-10">
         <div className="flex justify-center mb-[30px]">
           <img src={GoogleMap} className=" h-[39px] w-[213px]" />
         </div>
