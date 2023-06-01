@@ -1,12 +1,24 @@
 /* eslint-disable */
-
+import React, { useState } from "react";
 import Primary from "../Button/Primary";
 import { Icon } from "@iconify/react";
 
 const Content = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+    console.log("object");
+  };
   return (
     <>
       {/* bg-[url('https://cdn.shopify.com/s/files/1/0025/8555/9110/files/Header-Image_1_1080x.png?v=1675715280')]  */}
+      <img
+        src="/src/assets/Mobile_Main.png"
+        alt="Background Image"
+        className="absolute inset-0 h-full w-full opacity-0"
+        onLoad={handleImageLoad}
+        style={{ display: "none" }}
+      />
       <div className=" relative h-screen w-full bg-[url('/src/assets/Mobile_Main.png')]   lg:bg-[url('/src/assets/Main.png')] bg-no-repeat bg-center lg:bg-fixed bg-cover">
         <div className=" bg-opacity-40 lg:bg-opacity-20 h-full bg-black">
           <div className="absolute top-[34%] lg:top-[27%] left-[12%]">

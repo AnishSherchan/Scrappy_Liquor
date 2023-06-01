@@ -18,7 +18,7 @@ const ProductSlider = ({ product, title }) => {
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(2);
       } else {
-        setSlidesToShow(3);
+        setSlidesToShow(4);
       }
     };
     handleResize();
