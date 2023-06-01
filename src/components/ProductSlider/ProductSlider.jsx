@@ -14,12 +14,14 @@ const ProductSlider = ({ product, title }) => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
         setSlidesToShow(1);
+        console.log("object");
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(2);
       } else {
         setSlidesToShow(3);
       }
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
