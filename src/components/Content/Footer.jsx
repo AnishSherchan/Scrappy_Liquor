@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 const Footer = () => {
   return (
     <div className="py-4 px-10 flex flex-col justify-center items-center flex-wrap gap-8">
-      <hr className="w-full h-[2px] border-t bg-[#DFDED9] mx-4"></hr>
+      <hr className="w-full h-[2px] border-t bg-[#DFDED9] "></hr>
       <img
         src={
           "https://cdn.shopify.com/s/files/1/0025/8555/9110/t/46/assets/logo-black_440x.png?v=82187768844039924211675878975"
